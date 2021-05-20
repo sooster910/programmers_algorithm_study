@@ -9,4 +9,8 @@
     npm i --save-dev jest
 ```
 
-##
+## 문제 리스트
+
+| Tag | LEVEL | 문제 제목  | 접근법 링크  | 
+| :--: | :----------: | :-----------------: | :--:
+| 문자열 | 2️⃣ |문자열압축 |  [바로가기](https://github.com/sooster910/programmers_algorithm_study/blob/master/kakao/CompressString/solution.md) | 
