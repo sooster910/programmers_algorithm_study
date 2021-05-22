@@ -23,7 +23,7 @@ jobs:
       - name: Test env 
 #         env:
 #           COMMIT_ID: ${{GITHUB_SHA}}
-        run: echo "commit ID => ${{GITHUB_SHA}} "
+        run: echo "commit ID => $GITHUB_SHA "
       - name: Run online scriopt
 #         env:
 #           COMMIT_ID: "1234"
