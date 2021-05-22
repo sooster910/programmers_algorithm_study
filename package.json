@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sooster910/programmers_algorithm_study#readme",
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "mustache": "^4.2.0"
   }
 }
