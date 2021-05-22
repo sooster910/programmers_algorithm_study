@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: README build
 
 # Controls when the action will run. 
 on:
@@ -17,12 +17,26 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Run env to display available env
-        run: env
-
-      # Test displaying COMMIT_ID using env variable : COMMIT_ID
-      - name:  displaying GITHUB_SHA using env variable 
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+      - name: Setup NodeJs 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Cache dependencies and build outputs to improve workflow execution time.
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Generate README file
+        run: node index.js
+      
+      - name: Commit and Push new README.md to the repository
+        uses: mikeal/publish-to-github-action@master
         env:
-            COMMIT_ID: ${{GITHUB_SHA}}
-        run: echo "commit ID => $COMMIT_ID "
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
