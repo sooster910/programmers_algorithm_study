@@ -23,6 +23,6 @@ jobs:
       # Test displaying COMMIT_ID using env variable : COMMIT_ID
       - name:  displaying GITHUB_SHA using env variable 
         env:
-            COMMIT_ID: $GITHUB_SHA
+            COMMIT_ID: ${{GITHUB_SHA}}
         run: echo "commit ID => $COMMIT_ID "
         
