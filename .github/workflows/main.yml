@@ -17,7 +17,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
       # Test displaying COMMIT_ID using env variable : COMMIT_ID
       - name: Test env 
         env:
