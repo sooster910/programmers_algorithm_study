@@ -21,9 +21,9 @@ jobs:
         uses: actions/checkout@v1
       # Test displaying COMMIT_ID using env variable : COMMIT_ID
       - name: Test env 
-        env:
-          COMMIT_ID: ${{GITHUB_SHA}}
-        run: echo "commit ID =>$COMMIT_ID"
+#         env:
+#           COMMIT_ID: ${{GITHUB_SHA}}
+        run: echo "commit ID => ${{GITHUB_SHA}} "
       - name: Run online scriopt
 #         env:
 #           COMMIT_ID: "1234"
