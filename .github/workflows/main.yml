@@ -17,6 +17,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
       # Test displaying COMMIT_ID using env variable : COMMIT_ID
       - name: Test env 
         env:
