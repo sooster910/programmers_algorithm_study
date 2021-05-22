@@ -1,1 +1,1 @@
-My name is Thomas and today is Saturday, May 22, 5:49 PM GMT+2.
+My name is Hyunsu Joo and today is Sunday, May 23, 1:09 AM GMT+9.
