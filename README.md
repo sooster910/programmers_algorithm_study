@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-today is Monday, May 24, 8:13 PM GMT+9
+Today is Monday, May 24, 8:13 PM GMT+9
 
 <h1>👋  프로그래머스 JavaScript solution & test case </h1>
 
@@ -65,7 +64,6 @@ today is Monday, May 24, 8:13 PM GMT+9
     </tbody>    
 </table>
 
+
 <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
-=======
-My name is Hyunsu Joo and today is Sunday, May 23, 1:09 AM GMT+9.
->>>>>>> 673041cbf085875e1b5af87dd191c371e3d502f0
+
