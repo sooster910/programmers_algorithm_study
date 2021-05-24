@@ -1,5 +1,6 @@
 Today is Monday, May 24, 8:13 PM GMT+9
 
+[![README build](https://github.com/sooster910/programmers_algorithm_study/actions/workflows/main.yml/badge.svg)](https://github.com/sooster910/programmers_algorithm_study/actions/workflows/main.yml)
 <h1>👋  프로그래머스 JavaScript solution & test case </h1>
 
 <p> 안녕하세요. 이 repository를 생성하게 된 동기는 다른 타 언어에 비해 자바스크립트로 풀어진 정보들이 조금 부족하다고 생각해 유익하게 개발자를 준비하는 분들 또는 현 개발자 분들에게 참고가 되었으면 합니다.</p>
