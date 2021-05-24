@@ -1,12 +1,16 @@
 const Mustache = require('mustache');
 const fs = require('fs');
 const MUSTACHE_MAIN_DIR = './main.mustache';
+const programmers = require('./programmers');
+const file = require('./file');
+
 /**
   * DATA is the object that contains all
   * the data to be provided to Mustache
   * Notice the "name" and "date" property.
 */
 let DATA = {
+
   name: 'Hyunsu Joo',
   date: new Date().toLocaleDateString('ko-KR', {
     weekday: 'long',
@@ -23,11 +27,23 @@ let DATA = {
   * B - We ask Mustache to render our file with the data
   * C - We create a README.md file with the generated output
   */
-function generateReadMe() {
-  fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
+async function generateReadMe() {
+  fs.readFile(MUSTACHE_MAIN_DIR, (err, data) => {
     if (err) throw err;
     const output = Mustache.render(data.toString(), DATA);
     fs.writeFileSync('README.md', output);
   });
 }
-generateReadMe();
+
+(async () => {
+  //search directories 
+  let titleFromFiles = await file.getList();
+  //initialize scraping on programmers 
+  await programmers.initialize('learn/challenges', 'all_challenges');
+  let results = await programmers.getResult(titleFromFiles);
+  DATA["multiple"] = [...results];
+  await programmers.close();
+
+  await generateReadMe();
+})();
+

@@ -22,9 +22,11 @@ def solution(numbers):
     answer = 0
     noDuplicatedPerm = []
     for i in range(1, len(numbers) + 1):
+        #왜 set 을 쓰는가?
         perms = set(permutations(numbers, i))
 
-        for perm in set(perms):
+        for perm in perms:
+            perm_type = type(perm)
             str_perm = ''.join(perm)
             int_perm = int(str_perm)
             noDuplicatedPerm.append(int_perm)
@@ -38,3 +40,5 @@ def solution(numbers):
             continue
 
     return answer
+
+solution("1204")
