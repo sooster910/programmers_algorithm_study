@@ -59,6 +59,12 @@
         <tr>
             <td align="center">스택&#x2F;큐</td>
             <td align="center">2️⃣</td>
+            <td align="center">다리를 지나는 트럭</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42583"> 바로가기 </a> </td>
+        </tr>
+        <tr>
+            <td align="center">스택&#x2F;큐</td>
+            <td align="center">2️⃣</td>
             <td align="center">프린터</td>
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42587"> 바로가기 </a> </td>
         </tr>
