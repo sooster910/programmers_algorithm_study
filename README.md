@@ -1,6 +1,5 @@
-Today is Monday, May 24, 8:13 PM GMT+9
+today is Tuesday, May 25, 12:09 PM GMT+9
 
-[![README build](https://github.com/sooster910/programmers_algorithm_study/actions/workflows/main.yml/badge.svg)](https://github.com/sooster910/programmers_algorithm_study/actions/workflows/main.yml)
 <h1>👋  프로그래머스 JavaScript solution & test case </h1>
 
 <p> 안녕하세요. 이 repository를 생성하게 된 동기는 다른 타 언어에 비해 자바스크립트로 풀어진 정보들이 조금 부족하다고 생각해 유익하게 개발자를 준비하는 분들 또는 현 개발자 분들에게 참고가 되었으면 합니다.</p>
@@ -57,6 +56,12 @@ Today is Monday, May 24, 8:13 PM GMT+9
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;60059"> 바로가기 </a> </td>
         </tr>
         <tr>
+            <td align="center">스택&#x2F;큐</td>
+            <td align="center">2️⃣</td>
+            <td align="center">프린터</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42587"> 바로가기 </a> </td>
+        </tr>
+        <tr>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center">타겟넘버</td>
@@ -65,6 +70,4 @@ Today is Monday, May 24, 8:13 PM GMT+9
     </tbody>    
 </table>
 
-
 <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
-
