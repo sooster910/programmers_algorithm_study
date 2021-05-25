@@ -6,7 +6,7 @@ const self = {
     browser: null,
     page: null,
     initialize: async (page, tab) => {
-        this.browser = await puppeteer.launch({ headless: false });
+        this.browser = await puppeteer.launch({ headless: true });
         this.page = await this.browser.newPage();
         //go to programmers page 
         await this.page.goto(challengeURL(page, tab), { waitUntil: 'networkidle0' });
