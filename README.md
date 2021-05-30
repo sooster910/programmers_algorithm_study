@@ -45,6 +45,12 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42586"> 바로가기 </a> </td>
         </tr>
         <tr>
+            <td align="center">2019 카카오 개발자 겨울 인턴십</td>
+            <td align="center">1️⃣</td>
+            <td align="center">크레인 인형뽑기 게임</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;64061"> 바로가기 </a> </td>
+        </tr>
+        <tr>
             <td align="center">해시</td>
             <td align="center">1️⃣</td>
             <td align="center">완주하지 못한 선수</td>
