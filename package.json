@@ -2,8 +2,9 @@
   "name": "programmers_algorithm_study",
   "version": "1.0.0",
   "description": "",
-  "main": "123worldNumber.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

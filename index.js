@@ -38,6 +38,7 @@ async function generateReadMe() {
 (async () => {
   //search directories 
   let titleFromFiles = await file.getList();
+  console.log(titleFromFiles)
   //initialize scraping on programmers 
   await programmers.initialize('learn/challenges', 'all_challenges');
   let results = await programmers.getResult(titleFromFiles);

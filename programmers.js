@@ -18,47 +18,56 @@ const self = {
 
     getResult: async (fileTitles) => {
         let challengeInfos = [];
-        let challengeInfo;
+        let challengeInfo={};
+        let count = 0;
         try {
-            // let nextPageBtn = await this.page.$('.next.next_page');
             for (let fileTitle of fileTitles) {
+                console.log("another file title: ",count)
+
+                //문제 파일을 찾기 위해서
                 while (true) {
-
                     await this.page.waitForTimeout(500);
-                    if (await this.page.$('.next_page.disabled') !== null) {
-             
-                        //문제가 리스트에 없을 때 
-                        if (Object.keys(challengeInfo).length === 0 && challengeInfo.constructor === Object) {
-                            challengeInfo["title"] = fileTitle;
-                            challengeInfo["questionURL"] = "None";
-                            challengeInfos.push(challengeInfo);
-                            break;
-                        }
-                        break;
-                    }
-
+                    console.log("before await",fileTitle)
+                    //find file Info
                     challengeInfo = await self.parseResult(fileTitle);
-                    console.log(challengeInfo);
+                    console.log("after await")
+
                     if (Object.keys(challengeInfo).length !== 0) {
                         challengeInfos.push(challengeInfo);
-                        console.log(challengeInfos);
+                        console.log('문제 찾음 !',challengeInfos);
+                        //문제 찾은 후 첫번째 페이지로 돌아가기
                         const firstPageBtn = await this.page.$x("//a[contains(text(), '1')]");
-                    
                         await firstPageBtn[0].click()
-
+                        console.log("첫번째 페이지로 돌아가기 ")
                         break
                     }
+                    //못찾앗다면 다음 페이지로
+                    //만약 마지막 페이지라면
                     try {
-                        await this.page.waitForSelector('.next.next_page');
+                        console.log("find disable button")
+                        const disabledNextBtn = await this.page.waitForSelector(".next.next_page.disabled");
+                        if(disabledNextBtn){
+                            console.log("마지막 페이지")
+                            if (Object.keys(challengeInfo).length === 0 && challengeInfo.constructor === Object) {
+                                        challengeInfo["title"] = fileTitle;
+                                        challengeInfo["questionURL"] = "None";
+                                        challengeInfos.push(challengeInfo);
+                                    }
+                            const firstPageBtn = await this.page.$x("//a[contains(text(), '1')]");
+                            await firstPageBtn[0].click()
+                            break;
+
+                        }//마지막 페이지라면
+                        // await this.page.waitForSelector('.next.next_page');
                     } catch (err) {
                         console.log('Could not find the "Next button"');
-                        break;
-                    }
+                        await this.page.click('.next.next_page');
+                        await this.page.waitForTimeout(500);
+                        console.log("click next btn")
 
-                    await this.page.click('.next.next_page');
-                    await this.page.waitForTimeout(500);
-                    console.log("click next btn")
+                    }
                 }
+                count++;
             }
             return challengeInfos
         } catch (err) {
@@ -74,16 +83,16 @@ const self = {
         let level = ""
         await this.page.waitForTimeout(1000);
         await this.page.waitForSelector('.card-algorithm')
-
+        console.log(" in the await ")
         let elements = await this.page.$$('.card-algorithm');
-
+        //loop over each element in the card-algorithm class
         for (let element of elements) {
             //find element 
 
             let title = await element.$eval(('h4.title'), el => el.innerText.trim());
-            
+
             if (title.replace(/(\s*)/g, "") === fileTitle.replace(/(\s*)/g, "")) {
-                
+
                 level = await element.evaluate(element => element.getAttribute('class').split(' ')[1]);
                 levelUnicode = level === "level-1"? "1️⃣": level==="level-2"?"2️⃣":level==="level-3"? "3️⃣ ":"-";
                 questionURL = await element.$eval(('a'), el => el.getAttribute('href'));
@@ -95,6 +104,7 @@ const self = {
 
             }
         }
+
         return result;
     }
 }
