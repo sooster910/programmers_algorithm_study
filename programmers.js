@@ -57,8 +57,8 @@ const self = {
                             await firstPageBtn[0].click()
                             break;
 
-                        }//마지막 페이지라면
-                        // await this.page.waitForSelector('.next.next_page');
+                        }
+
                     } catch (err) {
                         console.log('Could not find the "Next button"');
                         await this.page.click('.next.next_page');
