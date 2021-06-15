@@ -27,10 +27,16 @@
     </thead>
     <tbody>
         <tr>
-            <td align="center">연습문제</td>
-            <td align="center">2️⃣</td>
+            <td align="center"></td>
+            <td align="center"></td>
             <td align="center">124 나라의 숫자</td>
-            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12899"> 바로가기 </a> </td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+        </tr>
+        <tr>
+            <td align="center">완전탐색</td>
+            <td align="center">2️⃣</td>
+            <td align="center">카펫</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42842"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">2020 KAKAO BLIND RECRUITMENT</td>
@@ -75,10 +81,10 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42587"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center">2017 팁스타운</td>
-            <td align="center">2️⃣</td>
+            <td align="center"></td>
+            <td align="center"></td>
             <td align="center">짝지어 제거하기</td>
-            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12973"> 바로가기 </a> </td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">2021 KAKAO BLIND RECRUITMENT</td>
@@ -87,10 +93,10 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;72411"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center">타겟넘버</td>
-            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+            <td align="center">깊이&#x2F;너비 우선 탐색(DFS&#x2F;BFS)</td>
+            <td align="center">2️⃣</td>
+            <td align="center">타겟 넘버</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;43165"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">2017 팁스타운</td>
