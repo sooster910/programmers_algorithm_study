@@ -1,3 +1,4 @@
+//title: H-Index
 function solution(citations) {
 
     let sortedCitations = citations.sort((a,b)=>a-b);
