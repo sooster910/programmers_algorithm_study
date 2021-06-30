@@ -1,18 +1,47 @@
 
 [![README build](https://github.com/sooster910/programmers_algorithm_study/actions/workflows/main.yml/badge.svg)](https://github.com/sooster910/programmers_algorithm_study/actions/workflows/main.yml)
 
-<h1>👋  프로그래머스 JavaScript solution & test case </h1>
+<h1>👋 Programmers(coding test platform) JavaScript solution & test case, auto generated README.md</h1>
 
-<p> 안녕하세요. 이 repository를 생성하게 된 동기는 다른 타 언어에 비해 자바스크립트로 풀어진 정보들이 조금 부족하다고 생각해 유익하게 개발자를 준비하는 분들 또는 현 개발자 분들에게 참고가 되었으면 합니다.</p>
-<p> 또한, 저의 개인적인 트레이닝 툴 로써 다시 문제를 풀었을 때 테스트 케이스로 풀면 조금 더 효율적이라고 생각했습니다. </p>
-<p> 이 README.md file은 github action을 이용한 자동 생성 파일입니다. 제가 문제를 하나씩 풀고 저의 코드베이스/테스트케이스/접근법을 commit 할 때마다 하단의 표에 하나씩 추가됩니다. 
+<h2> Background </h2>
 
+This repo intended for anyone who wants to improve problem solving skills with JavaScript or want to get a help from solution. All questions are available on [programmers.co.kr](https://programmers.co.kr).  
 
-<h2> 🛠 Install Testing Dependency :  Jest </h2>
+<h2>Installing from source</h3>
+<h4>Requirements</h4>
+
+Node.js 12.16.2 or newer
+
+<h5>Check Node.js version on Terminal</h5>
+
+```
+    node -v
+```
+
+<h4>Get the source code and install packages</h4>
+
+```javascript
+
+git clone https://github.com/sooster910/programmers_algorithm_study.git
+cd programmers_algorithm_study
+npm install
+
+```
+
+<h4> 🛠 Install Testing Dependency :  Jest </h4>
 
 ```javascript
     npm i --save-dev jest
 ```
+
+<h4>Genrate/ Getting updates README.md </h4>
+
+```javascript
+    git add <file/folder>
+    git commit -m "<commit message>"
+    git push origin <your origin branch name>
+```
+
 
 <h2>문제 리스트</h2>
 
@@ -39,10 +68,10 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42842"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center">2020 KAKAO BLIND RECRUITMENT</td>
-            <td align="center">2️⃣</td>
+            <td align="center"></td>
+            <td align="center"></td>
             <td align="center">문자열 압축</td>
-            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;60057"> 바로가기 </a> </td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">스택&#x2F;큐</td>
@@ -53,7 +82,7 @@
         <tr>
             <td align="center"></td>
             <td align="center"></td>
-            <td align="center"></td>
+            <td align="center">&#x2F;&#x2F; function solution(number, k) {</td>
             <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
         </tr>
         <tr>
@@ -111,16 +140,16 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;72411"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center">깊이&#x2F;너비 우선 탐색(DFS&#x2F;BFS)</td>
-            <td align="center">2️⃣</td>
-            <td align="center">타겟 넘버</td>
-            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;43165"> 바로가기 </a> </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">타겟넘버</td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center">2017 팁스타운</td>
-            <td align="center">2️⃣</td>
-            <td align="center">예상 대진표</td>
-            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12985"> 바로가기 </a> </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"> 예상 대진표</td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center"></td>
@@ -132,3 +161,28 @@
 </table>
 
 <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
+
+<h2> How this repo generates README.md automatically  </h2>
+
+Tired of update GitHub README with what you've solved from [programmers.co.kr](https://programmers.co.kr/)? You want to organize, categorize the problems you've solved to save time looking for things? This would generate README file when you push your solution.  
+
+[![workflowImage](/assets/imgs/generateReadme.png)]
+
+<h3> Built with </h3>
+
+<ul>
+<li>Node.js</li>
+<li>Puppeteer</li>
+<li>Mustache.js</li>
+<li>github actions</li>
+</ul>
+
+github action enable almost everyting to automate. 
+
+When you push your code, github action would take a steps and run node index.js. `file.getList()` basically returns the list of question titles you've solved. All `src/<short name for question title>/index.js` **must have a commented line with a question title (ex. `//키패드누르기 ` )** so that it allows nodejs to collect titles and transfer to puppeteer. 
+ 
+After getting all the list of titles from your codebase, puppeteer starts launching headless browser, called chromnium and searching questions whose title name matches with file name from   `file.getList()`.  
+
+pupeteer collects title, difficulty, and data that you want to collect and transfer to [mustache.js](https://github.com/janl/mustache.js). [mustache.js](https://github.com/janl/mustache.js) is a logic-less template syntax. It can be used for HTML, config files, source code - anything. It generates new markdown page.      
+
+<p>source: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
