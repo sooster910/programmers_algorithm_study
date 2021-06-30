@@ -27,10 +27,10 @@
     </thead>
     <tbody>
         <tr>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center">연습문제</td>
+            <td align="center">2️⃣</td>
             <td align="center">124 나라의 숫자</td>
-            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12899"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">완전탐색</td>
@@ -51,10 +51,22 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42586"> 바로가기 </a> </td>
         </tr>
         <tr>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+        </tr>
+        <tr>
             <td align="center">2019 카카오 개발자 겨울 인턴십</td>
             <td align="center">1️⃣</td>
             <td align="center">크레인 인형뽑기 게임</td>
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;64061"> 바로가기 </a> </td>
+        </tr>
+        <tr>
+            <td align="center">정렬</td>
+            <td align="center">2️⃣</td>
+            <td align="center">H-Index</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42747"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">해시</td>
@@ -69,6 +81,12 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;60059"> 바로가기 </a> </td>
         </tr>
         <tr>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center">&#x2F;&#x2F;title : 올바른 괄호</td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+        </tr>
+        <tr>
             <td align="center">스택&#x2F;큐</td>
             <td align="center">2️⃣</td>
             <td align="center">다리를 지나는 트럭</td>
@@ -81,10 +99,10 @@
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;42587"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center">2017 팁스타운</td>
+            <td align="center">2️⃣</td>
             <td align="center">짝지어 제거하기</td>
-            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12973"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">2021 KAKAO BLIND RECRUITMENT</td>
