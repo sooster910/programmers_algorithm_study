@@ -56,10 +56,10 @@ npm install
     </thead>
     <tbody>
         <tr>
-            <td align="center">연습문제</td>
-            <td align="center">2️⃣</td>
+            <td align="center"></td>
+            <td align="center"></td>
             <td align="center">124 나라의 숫자</td>
-            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12899"> 바로가기 </a> </td>
+            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">완전탐색</td>
@@ -110,10 +110,10 @@ npm install
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;60059"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center">&#x2F;&#x2F;title : 올바른 괄호</td>
-            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+            <td align="center">연습문제</td>
+            <td align="center">2️⃣</td>
+            <td align="center">올바른 괄호</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;12909"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center">스택&#x2F;큐</td>
@@ -140,10 +140,10 @@ npm install
             <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;72411"> 바로가기 </a> </td>
         </tr>
         <tr>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center">타겟넘버</td>
-            <td align="center"><a href="https://programmers.co.kr/None"> 바로가기 </a> </td>
+            <td align="center">깊이&#x2F;너비 우선 탐색(DFS&#x2F;BFS)</td>
+            <td align="center">2️⃣</td>
+            <td align="center">타겟 넘버</td>
+            <td align="center"><a href="https://programmers.co.kr/&#x2F;learn&#x2F;courses&#x2F;30&#x2F;lessons&#x2F;43165"> 바로가기 </a> </td>
         </tr>
         <tr>
             <td align="center"></td>
@@ -160,13 +160,14 @@ npm install
     </tbody>    
 </table>
 
+
 <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
 
 <h2> How this repo generates README.md automatically  </h2>
 
 Tired of update GitHub README with what you've solved from [programmers.co.kr](https://programmers.co.kr/)? You want to organize, categorize the problems you've solved to save time looking for things? This would generate README file when you push your solution.  
 
-[![workflowImage](/assets/imgs/generateReadme.png)]
+![workflowImage](/assets/imgs/generateReadme.png)
 
 <h3> Built with </h3>
 
@@ -177,12 +178,10 @@ Tired of update GitHub README with what you've solved from [programmers.co.kr](h
 <li>github actions</li>
 </ul>
 
-github action enable almost everyting to automate. 
+<p>github action enable almost everyting to automate. 
 
 When you push your code, github action would take a steps and run node index.js. `file.getList()` basically returns the list of question titles you've solved. All `src/<short name for question title>/index.js` **must have a commented line with a question title (ex. `//키패드누르기 ` )** so that it allows nodejs to collect titles and transfer to puppeteer. 
- 
 After getting all the list of titles from your codebase, puppeteer starts launching headless browser, called chromnium and searching questions whose title name matches with file name from   `file.getList()`.  
-
-pupeteer collects title, difficulty, and data that you want to collect and transfer to [mustache.js](https://github.com/janl/mustache.js). [mustache.js](https://github.com/janl/mustache.js) is a logic-less template syntax. It can be used for HTML, config files, source code - anything. It generates new markdown page.      
-
-<p>source: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
+pupeteer collects title, difficulty, and data that you want to collect and transfer to [mustache.js](https://github.com/janl/mustache.js). 
+[mustache.js](https://github.com/janl/mustache.js) is a logic-less template syntax. It can be used for HTML, config files, source code - anything. It generates new markdown page.      
+</p>
