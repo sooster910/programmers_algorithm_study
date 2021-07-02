@@ -30,5 +30,5 @@ function solution2(s){
         return answer;
 
 }
-is_pair("(())()")
+
 

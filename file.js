@@ -36,12 +36,12 @@ const file = {
             let data = await fs.readFileSync(filePath, "utf8");            
             data = data.split("\n"); // split the document into lines
             data.length = 1;    // set the total number of lines to 2
-            res=data[0]
-            if(res.includes("title:")){
+            res=data[0];
+            if(res.includes("title")){
                 res=res.split(':')[1];
             } 
         } catch (err) {
-            console.log(err);
+            console.log('cannot find // title: comment ',err);
         }
         return res;
     }
