@@ -163,6 +163,9 @@ npm install
 
 <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
 
+
+---
+
 <h2> How this repo generates README.md automatically  </h2>
 
 Tired of update GitHub README with what you've solved from [programmers.co.kr](https://programmers.co.kr/)? You want to organize, categorize the problems you've solved to save time looking for things? This would generate README file when you push your solution.  
@@ -178,10 +181,3 @@ Tired of update GitHub README with what you've solved from [programmers.co.kr](h
 <li>github actions</li>
 </ul>
 
-<p>github action enable almost everyting to automate. 
-
-When you push your code, github action would take a steps and run node index.js. `file.getList()` basically returns the list of question titles you've solved. All `src/<short name for question title>/index.js` **must have a commented line with a question title (ex. `//키패드누르기 ` )** so that it allows nodejs to collect titles and transfer to puppeteer. 
-After getting all the list of titles from your codebase, puppeteer starts launching headless browser, called chromnium and searching questions whose title name matches with file name from   `file.getList()`.  
-pupeteer collects title, difficulty, and data that you want to collect and transfer to [mustache.js](https://github.com/janl/mustache.js). 
-[mustache.js](https://github.com/janl/mustache.js) is a logic-less template syntax. It can be used for HTML, config files, source code - anything. It generates new markdown page.      
-</p>
